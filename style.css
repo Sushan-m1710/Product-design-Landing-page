@@ -41,7 +41,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 1.5fr 2fr;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .head-left img{
@@ -62,7 +62,7 @@ header{
     text-align: left;
     line-height: 28px;
     font-size: 19px;
-    margin-right: 80px;
+    margin-right: 300px;
 }
 
 .sort{
@@ -238,10 +238,12 @@ header{
 .imgcard img{
     height: 280px;
     width: 440px;
-    position: relative;
+    /* position: relative;
     left: 30px;
-    top:20px;
+    top:20px; */
     /* object-fit: fill; */
+    padding-left: 30px;
+    padding-top: 30px;
 }
 .projectcard h3{
     margin-top:80px;
@@ -344,4 +346,209 @@ footer{
     z-index: -1;
     margin-top: 0px;
 
+}
+@media screen and (max-width:600px){
+    body{
+        /* background-color: #fff; */
+    }
+    .logo{
+        margin-left: 35%;
+    }
+    .nav-lists{
+        display: none;
+    }
+    header{
+       display: flex;
+       flex-direction: column; 
+        /* grid-template-columns: 1fr; */
+       /* display: block;  */
+    }
+    .head-left img{
+        margin-left: 0px;
+        height: 400px;
+    }
+    .head-right{
+        margin-left: 10%;
+    }
+    .head-right h3{
+        margin-top: 10%;
+    }
+    .head-right h1{
+        /* background-color: #1d1d1d; */
+        margin: 5% 0 3% 0;
+        font-size: 250%;
+    }
+    .head-right p{
+        font-size: 100%;
+        margin-right: 5%;
+    }
+    .section-1{
+        /* display: block; */
+        margin-left: 20px;
+    }
+    .head-right{
+        /* display: block;
+        position: static; */
+        width: 320px;
+    }
+    .cards{
+        /* display: block; */
+        grid-template-columns: 1fr;
+        /* align-items: around; */
+        /* margin-top: 10%; */
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .card{
+        height: 100%;
+        width: 120%;
+        /* margin ; */
+    }
+    .card img{
+        height: 25%;
+    }
+    .card h3{
+        font-size: 170%;
+    }   
+    .card p{
+        font-size: 150%;
+    }
+    .section1-bottom{
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .section1-bottom h2{
+        font-size: 80px;
+        text-align: center;
+        margin: 10px 100px;
+    }
+    .left-b h5{
+        margin-left: 10px;
+        text-align: center;
+        margin:0 60px ;
+        width: 200px;
+    }
+    .minicard-g{
+        /* grid-template-columns: 1fr; */
+        margin-left: 0;
+    }
+    .minicard{
+        height: 80px;
+        width: 150px;
+        margin-left: 10px;
+    }
+    .minicard h2{
+        font-size: 24px;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+    .minicard p{
+
+    }
+    .section-2{
+        margin: 0 0 0 35px;
+    }
+    .sec2-head{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .sec2-head h2{
+        font-size: 28px;
+        margin-bottom: 13px;
+    }
+    .sec2-head p{
+        font-size: 13px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .view-btn button{
+        margin-left: 0px;
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .projectcards{
+        grid-template-columns: 1fr;
+        
+    }
+    .projectcard{
+        width: 310px;
+        height: 280px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .imgcard{
+        margin: 0;
+    }
+    .imgcard img{
+        width: 270px;
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .projectcard:nth-child(2n){
+        margin-left: 0px;
+    }
+    .projectcard h3{
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .projectcard span{
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .section-3{
+        grid-template-columns: 1fr;
+        /* margin-left: 35px;
+        margin-right: 0; */
+        width: 310px;
+        margin: 0;
+        margin-left: 35px;
+    }
+    .sec3-left h2{
+        font-size: 30px;
+        margin: 20px;
+    }
+    .sec3-left p{
+        margin: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .sec3-right{
+     
+        margin: 0 auto ;
+    }
+    .sec3-right button{
+        padding: 10px 20px;
+        font-weight: 500;
+        
+    }
+    .sec4-lists{
+        margin-left: 25px;
+        width: 320px;
+        justify-content: space-around;
+    }
+    .sec4.list{
+        margin: 0;  
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-logo img{
+        margin-left: 35px;
+        margin: 0 auto;
+    }
+    .footer-logo{
+        margin-left: 30%;
+    }
+    .footer-right{
+        margin-left: 20%;
+        margin-top: 30px;
+    }
+    
 }
