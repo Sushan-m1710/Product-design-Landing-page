@@ -347,14 +347,17 @@ footer{
     margin-top: 0px;
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     body{
         /* background-color: #fff; */
     }
     .logo{
         margin-left: 35%;
     }
-    .nav-lists{
+    .navbar{
+        display: block;
+    }
+    .nav-menu{
         display: none;
     }
     header{
